@@ -329,7 +329,7 @@ body {
   height: 100%;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  color: #1D3557;
+  color: white;
 }
 
 #headerWrapper {
@@ -363,7 +363,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #ADB5BD;
+  background-color: black;
 }
 nav a {
   display: block;
