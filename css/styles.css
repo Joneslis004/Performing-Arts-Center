@@ -333,8 +333,8 @@ body {
 }
 
 #headerWrapper {
-  background-color: #A8DADC;
-  color: #457B9D;
+  background-color: #2B4336;
+  color: #D9E4D7;
 }
 
 header {
@@ -350,34 +350,39 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: #495057;
+  background-color: #8EA48B;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+@media (max-width: 600px) {
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    flex: 1;
+  }
+  nav li.active {
+    background-color: rgba(113, 135, 110, 0.5568627451);
+    flex: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  nav a {
+    display: block;
+    padding: 0.75rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: rgb(69, 68, 68);
+  }
 }
-nav ul li {
-  flex: 1;
-}
-nav li.active {
-  background-color: black;
-}
-nav a {
-  display: block;
-  padding: 0.75rem;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #457B9D;
-}
-
 #footerWrapper {
-  background-color: lightsteelblue;
+  background-color: #2B4336;
+  color: white;
 }
 
 footer {
@@ -397,9 +402,36 @@ footer p {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 35rem) and (min-width: 601px) and (max-width: 1024px) {
+  nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  nav li {
+    flex: none;
+  }
+  nav a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+}
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+}
+@media only screen and (min-width: 60rem) and (min-width: 1025px) {
+  nav ul {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  nav li {
+    flex: 1;
+  }
+  nav a {
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */
