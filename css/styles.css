@@ -361,7 +361,7 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: #8EA48B;
+  background-color: #5d8359;
 }
 
 @media (max-width: 600px) {
@@ -438,7 +438,7 @@ header h1 {
 .play-card .play-date {
   margin: 0.5rem 0.75rem 0.75rem 0.75rem;
   font-size: 0.9rem;
-  color: #71876e;
+  color: #435440;
 }
 
 #footerWrapper {
