@@ -1,4 +1,38 @@
-header, nav, main, footer {
+@media (min-width: 1025px) { 
+  header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+}
+
+
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;     // horizontal layout
+    justify-content: flex-start;
+    align-items: center;
+    li {
+      flex: 1;
+    }
+  }
+
+  li.active {
+    background-color: #71876e8e;
+  }
+
+  a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1rem;
+    &:hover {
+      color: rgb(69, 68, 68);
+    }
+  }
+}
 }

@@ -20,7 +20,7 @@ body{
 }
 
 #headerWrapper {
-    background-color: #A8DADC;
+    background-color: #2B4336;
     color: $secondaryColor;
 }
 header {
@@ -30,16 +30,36 @@ header {
     gap: 8px;
     h1{
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: $normalWeight;
+    }
+}
+.phone-link {
+    margin-left: auto; // pushes it to the far right
+    text-decoration: none;
+    color: white;
+    font-weight: $normalWeight;
+    font-size: 1rem;
+
+    &:hover {
+        color: #8EA48B;
     }
 }
 
 
 #navWrapper {
-    background-color: #495057;
+    background-color: #8EA48B;
 }
-
+ @media (max-width: 600px) {
+    header {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .phone-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
 nav {
     ul {
         list-style-type: none;
@@ -47,22 +67,74 @@ nav {
         margin: 0;
         display: flex;
         li {flex:1;}
+        flex-direction: column;
+        align-items: stretch;
     }
-    li.active {background-color:black;}
+    li {
+        width: 100%;
+    }
+    li.active {background-color: #71876e8e;
+                flex: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
     a {
         display: block;
         padding: 0.75rem;
         color: white;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
-        &:hover {color: #457B9D;}
+        &:hover {color: rgb(69, 68, 68);}
+        width: 100%;
     }
 }
+}
+
+.plays-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.play-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 0.75rem;
+    color: #2B4336;
+  }
+
+  .play-date {
+    margin: 0.5rem 0.75rem 0.75rem 0.75rem;
+    font-size: 0.9rem;
+    color: #71876e;
+  }
+}
+
 
 // begin the footer
 
 #footerWrapper {
-    background-color: lightsteelblue;
+    background-color: #2B4336;
+    color: white;
 }
 footer {
     padding: 0.5rem $gutter;

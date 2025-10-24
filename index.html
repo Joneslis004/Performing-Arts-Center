@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Start File | UX/UI Designer</title>
-    <meta name="description" content="Lisette Jones's Sample Start File with SCSS">
+    <title>Alpine Performing Arts</title>
+    <meta name="description" content="Alpine Performing Arts">
     <meta name="author" content="Lisette Jones">
 
     <meta charset="UTF-8">
@@ -14,40 +14,126 @@
 <link href="css/styles.min.css" rel="stylesheet">
     
 <!-- fav icon stuff-->
- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
+ <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
 </head>
 <body>
     
     <div id="headerWrapper">
         <header>
-            <img src="images/logo.png" alt="logo" width="40" height="40">
-            <h1>The Front End Developer</h1>
+        <img
+          src="images/logo.png"
+          srcset="images/logo.png 1x, images/logo.png 2x, images/logo.png 3x"
+          alt="Alpine Performing Arts logo"
+          width="48" height="48"
+        />
+      </a>
+             <h1 class="site-title"><span class="brand-name">Alpine Performing Arts</span></h1>
+            <a href="tel:1234567890" class="phone-link">(123) 456-7890</a>
         </header>
     </div>
 
     <div id="navWrapper">
         <nav>
             <ul>
-                <li class="active"><a href="#">Learn</a></li>
-                <li><a href="#">Practice</a></li>
-                <li><a href="#">Implement</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Shows</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Meetings</a></li>
+                <li><a href="#">Support</a></li>
             </ul>
         </nav>
     </div>
 
     <div id="mainWrapper">
         <main>
-            <h1>Learn</h1>
+            <h1>Shows</h1>
+
+
+            <div class="plays-container">
+  <div class="play-card">
+    <img loading= "lazy" src="images/play1.webp" alt="Play 1" alt="Romeo and Juliet poster">
+    <h2>Romeo & Juliet</h2>
+    <p class="play-date">October 30, 2025</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play2.webp" alt="Play 2">
+    <h2>Hamlet</h2>
+    <p class="play-date">November 12, 2025</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play3.webp" alt="Play 3">
+    <h2>Macbeth</h2>
+    <p class="play-date">December 5, 2025</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play4.webp" alt="Play 4">
+    <h2>Les Miserables</h2>
+    <p class="play-date">December 23, 2025</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play5.webp" alt="Play 5">
+    <h2>Titanic</h2>
+    <p class="play-date">February 11, 2026</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play6.webp" alt="Play 6">
+    <h2>Phantom of the Opera</h2>
+    <p class="play-date">February 27, 2026</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play7.webp" alt="Play 7">
+    <h2>Matilda</h2>
+    <p class="play-date">March 16, 2026</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play8.webp" alt="Play 8">
+    <h2>Book of Mormon</h2>
+    <p class="play-date">April 12, 2026</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play9.webp" alt="Play 9">
+    <h2>Mamma Mia</h2>
+    <p class="play-date">April 28, 2026</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play10.webp" alt="Play 10">
+    <h2>Hamilton</h2>
+    <p class="play-date">May 14, 2026</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play11.webp" alt="Play 11">
+    <h2>Wicked</h2>
+    <p class="play-date">June 2, 2026</p>
+  </div>
+
+  <div class="play-card">
+    <img loading= "lazy" src="images/play12.webp" alt="Play 12">
+    <h2>Six</h2>
+    <p class="play-date">June 20, 2026</p>
+  </div>
+
+
+</div>
         </main>
     </div>
 
     <div id="footerWrapper">
         <footer>
-            <p>&copy; <span id="year">x</span> &bull; Lisette Jones</p>
+             <p>&copy; <span id="year"></span> &bull; <span class="author-name">Lisette Jones</span></p>
         </footer>
     </div>
 
