@@ -48,7 +48,7 @@ header {
 
 
 #navWrapper {
-    background-color: #5d8359;
+    background-color: #2a3b27;
 }
  @media (max-width: 600px) {
     header {
@@ -83,7 +83,7 @@ nav {
         color: white;
         text-align: left;
         text-decoration: none;
-        &:hover {color: rgb(69, 68, 68);}
+        &:hover {color: rgb(216, 219, 216);}
         width: 100%;
     }
 }
@@ -125,7 +125,7 @@ nav {
   .play-date {
     margin: 0.5rem 0.75rem 0.75rem 0.75rem;
     font-size: 0.9rem;
-    color: #435440;
+    color: #30392e;
   }
 }
 

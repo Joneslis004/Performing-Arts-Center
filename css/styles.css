@@ -361,7 +361,7 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: #5d8359;
+  background-color: #2a3b27;
 }
 
 @media (max-width: 600px) {
@@ -401,7 +401,7 @@ header h1 {
     width: 100%;
   }
   nav a:hover {
-    color: rgb(69, 68, 68);
+    color: rgb(216, 219, 216);
   }
 }
 .plays-container {
@@ -438,7 +438,7 @@ header h1 {
 .play-card .play-date {
   margin: 0.5rem 0.75rem 0.75rem 0.75rem;
   font-size: 0.9rem;
-  color: #435440;
+  color: #30392e;
 }
 
 #footerWrapper {
